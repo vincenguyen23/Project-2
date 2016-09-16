@@ -5,7 +5,8 @@
     <title>Dating Website</title>
 </head>
 <h2>Please Enter Your Details For Our Dating Website</h2>
-<style>
+ <style>
+
     fieldset{
         background:lightyellow;
         border:10px solid yellow;
@@ -13,75 +14,80 @@
         width:720px;
     }
     label{
-        width:180px;
         display:inline-block;
         vertical-align:top;
         text-align:right;
-        width:auto;
+        width:180px;
     }
     textarea{
-        text-align:center;
         width:360px;
         height:50px;
+        text-align:center;
     }
     h4 {
         display:inline;
         font-weight:normal;
         background-color:red;
         color:aliceblue;
-        padding:4px;
+        padding:4px;}
+
+    article,aside,figure,footer,header,
+    menu,nav,section {display:block;
     }
-
-
 </style>
-<fieldset>
-    <table>
-        <tr>
-    <legend>Your Face:</legend>
-    <label for="Your Image">Your Image</label>
-    <input type="file"required>
-    <td><label for="Image Preview">Image Preview:</label></td>
-        </tr>
-</fieldset>
-<fieldset>
-    <table>
-        <tr>
-    <legend>Your General Details</legend>
-    <td><label for="Name">Name:</label>
-      <input type="text"required></td>
-        </tr>
-    <tr>
-        <td><label for="Gender">Gender:</label>
-            <input type="radio">Male</label required>
-            <input type="radio">Female</label required></td>
-    </tr>
-        <tr>
-            <td><label for="Age">Age:</label>
-            <input type="age"[required]></td>
-        </tr>
-        <tr>
-        <td><label for="Date of Birth">Date of Birth:</label>
-            <input type="text"[required]></td>
-                   </tr>
-        <tr>
-            <td><label for="Your Favorite Color">Your Favorite Color:</label>
-            <input type="color"[required]></td>
-        </tr>
-        <tr>
-            <td><label for="Your Country">Your Country:</label>
+<body>
+    <h2>Please Enter Your Details For Our Dating Website</h2>
+    <fieldset>
 
-                <select>
-                    <option label="North America"North America</option>
-                    <option label="Japan"Japan</option>
-                    <option label="Germany"Germany</option>
-                    <option label="New Zealand"New Zealand</option>
-                    <option label="Switzerland"Switzerland </option>
-                </select>
-            </td>
-        </tr>
-    </table>
-</fieldset>
+        <legend>Your Face:</legend>
+        <label for="Your Image">Your Image</label>
+        <input type="file" onchange="readURL(this);" id="preview"
+               required>
+
+
+        <label for="Image Preview">Image Preview:</label>
+            <img id="blah" src="#" alt="your image"/>
+    </fieldset>
+
 <fieldset>
+        <table>
+            <tr>
+                <legend>Your General Details</legend>
+                <td><label for="Name">Name:</label>
+                    <input type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender:</label>
+                    <input type="radio">Male</label required>
+                    <input type="radio">Female</label required></td>
+            </tr>
+            <tr>
+                <td><label for="Age">Age:</label>
+                    <input type="age" [required]></td>
+            </tr>
+            <tr>
+                <td><label for="Date of Birth">Date of Birth:</label>
+                    <input type="text" [required]></td>
+            </tr>
+            <tr>
+                <td><label for="Your Favorite Color">Your Favorite Color:</label>
+                    <input type="color" [required]></td>
+            </tr>
+            <tr>
+                <td><label for="Your Country">Your Country:</label>
+
+                    <select>
+                        <option label="North America">North America</option>
+                        <option label="Japan">Japan</option>
+                        <option label="Germany">Germany</option>
+                        <option label="New Zealand">New Zealand</option>
+                        <option label="Switzerland">Switzerland</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
     <table>
     <tr>
     <legend>Your Indicators'</legend>
